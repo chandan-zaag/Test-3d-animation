@@ -7,8 +7,8 @@ Source: https://sketchfab.com/3d-models/earth-f7a76c63ff1846afb2d606e5c8369c15
 Title: Earth
 */
 
-import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import React from "react";
 
 export default function Model(props) {
     const { nodes, materials } = useGLTF("/earth.gltf");
@@ -17,7 +17,7 @@ export default function Model(props) {
             <mesh
                 geometry={nodes.Object_4.geometry}
                 material={materials["Scene_-_Root"]}
-                scale={1.128}
+                scale={10.128}
             />
         </group>
     );
